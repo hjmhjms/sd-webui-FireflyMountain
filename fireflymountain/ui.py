@@ -1,9 +1,9 @@
 
 import gradio as gr
-
 import modules.ui_common as ui_common
 
-from .logic import replacebackground, videoframe,shared
+from .logic import replacebackground, shared, videoframe
+
 
 def on_ui_tabs():
     with gr.Blocks(analytics_enabled=False) as mainInterface:
@@ -32,16 +32,17 @@ def AboutUI():
 ---
 
 ### 抖音号：
-- FireflyMountain
-- FireflyM
+- 萤火山  (FireflyM)
 
 ### 视频号
 - 萤火山唯美观
+
+### 微信公众号
 - 萤火山AI(FireflyMountainAI)
 
 ### sd-webui-FireflyMountain 是 stable diffusion webui的一个插件
 ```
-git clone https://github.com/hjmhjms/FireflyMountain
+git clone https://github.com/hjmhjms/sd-webui-FireflyMountain
 ```                    
 """)
 
